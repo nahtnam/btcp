@@ -1,11 +1,20 @@
 <template>
   <div>
-    <h1 class="title is-1">{{ leftCurrency.toLowerCase() }} to {{ rightCurrency.toLowerCase() }}</h1>
+    <h1 class="title is-1">
+      {{ leftCurrency.toLowerCase() }} to {{ rightCurrency.toLowerCase() }}
+    </h1>
     <div class="columns">
       <div class="column is-one-half">
         <div class="field has-addons">
           <div class="control is-expanded">
-            <input v-model="left" @keypress="strip" @keyup="updateLeft" type="text" class="input is-large has-text-centered" autofocus="true">
+            <input
+              v-model="left"
+              @keypress="strip"
+              @keyup="updateLeft"
+              type="text"
+              class="input is-large has-text-centered"
+              autofocus="true"
+            >
           </div>
           <div class="control">
             <div class="select is-large">
@@ -21,7 +30,13 @@
       <div class="column is-one-half">
         <div class="field has-addons">
           <div class="control is-expanded">
-            <input v-model="right" @keypress="strip" @keyup="updateRight" type="text" class="input is-large has-text-centered">
+            <input
+              v-model="right"
+              @keypress="strip"
+              @keyup="updateRight"
+              type="text"
+              class="input is-large has-text-centered"
+            >
           </div>
           <div class="control">
             <div class="select is-large">
@@ -108,7 +123,7 @@ export default {
     },
 
     strip() {
-      const event = window.event;
+      const { event } = window;
       const charCode = (event.which) ? event.which : event.keyCode;
       if (
         (charCode > 31 && (charCode < 48 || charCode > 57)) &&

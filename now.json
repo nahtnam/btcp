@@ -1,0 +1,19 @@
+{
+  "name": "btcp",
+  "alias": "www.btcp.co",
+  "type": "static",
+  "static": {
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "engines": {
+    "node": "^8.0.0"
+  },
+  "env": {
+    "BASE_URL": "https://www.btcp.co"
+  }
+}
