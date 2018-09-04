@@ -1,26 +1,22 @@
-# btcp
+<h1 align="center">btcp</h1>
 
-## Project setup
+<p align="center">
+  <a href="https://travis-ci.org/nahtnam/btcp" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/travis/nahtnam/btcp.svg" alt="Build Status"></a>
+</p>
+
+A bitcoin price tracker and converter among many other things.
+
+## Contribute
+1. Install the dependencies
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
+2. Run the server
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your unit tests
+3. Test the code
 ```
 npm run test:unit
 ```
+4. Make a pull request!
